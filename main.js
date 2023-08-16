@@ -46,3 +46,10 @@ const sections = document.querySelectorAll("section");
 sections.forEach((section) => {
   observer.observe(section);
 });
+
+
+const authButton = document.getElementById('authButton');
+
+authButton.addEventListener('click', () => {
+  window.open('https://google.com', '_blank');
+});

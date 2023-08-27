@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sarthi Admin</title>
+<style>
+body {
+font-family: Arial, sans-serif;
+background-color: #f9f9f9;
+margin: 0;
+padding: 0;
+display: flex;
+justify-content: center;
+align-items: center;
+min-height: 100vh;
+}
+.container {
+display: flex;
+max-width: 800px;
+width: 100%;
+background-color: white;
+box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+overflow: hidden;
+}
+.aside {
+flex: 1;
+padding: 20px;
+background-color: #007bff;
+color: white;
+text-align: center;
+border-top-left-radius: 10px;
+border-bottom-left-radius: 10px;
+}
+.content {
+flex: 2;
+padding: 20px;
+}
+.person-list {
+list-style: none;
+padding: 0;
+}
+.person {
+cursor: pointer;
+color: white;
+text-decoration: none;
+transition: color 0.3s;
+margin-bottom: 10px;
+}
+.person:hover {
+color: #ffd700;
+}
+.options {
+display: none;
+margin-top: 10px;
+}
+
+.options a {
+color: #007bff;
+text-decoration: none;
+transition: color 0.3s;
+}
+.options a:hover {
+color: #ffd700;
+}
+</style>
+</head>
+<body>
+<div class="container">
+<aside class="aside">
+<h2>Client List</h2>
+<ul>
+<li class="person" onclick="toggleOptions('person1')">Client A</li>
+<li class="person" onclick="toggleOptions('person2')">Client B</li>
+<li class="person" onclick="toggleOptions('person3')">Client C</li>
+<li class="person" onclick="toggleOptions('person4')">Client D</li>
+<li class="person" onclick="toggleOptions('person5')">Client E</li>
+<!-- <li class="person" onclick="toggleOptions('person6')">Person 6</li>
+<li class="person" onclick="toggleOptions('person7')">Person 7</li>
+<li class="person" onclick="toggleOptions('person8')">Person 8</li>
+<li class="person" onclick="toggleOptions('person9')">Person 9</li>
+<li class="person" onclick="toggleOptions('person10')">Person 10</li>
+<li class="person" onclick="toggleOptions('person11')">Person 11</li>
+<li class="person" onclick="toggleOptions('person12')">Person 12</li> -->
+<!-- Add more person names here -->
+</ul>
+</aside>
+<div class="content">
+<h1>Personal Info</h1>
+<div class="options" id="person1">
+<p>Options:</p>
+<ul>
+<li><a href="dummy_image.jpg" target="_blank">View Image of Client A</a></li><br>
+<li><a href="dummy_audio.mp3" target="_blank">Listen to Audio</a></li><br>
+<li><a href="dummy_document.pdf" target="_blank">View Documentation</a></li>
+</ul>
+</div>
+<div class="options" id="person2">
+<p>Options:</p>
+<ul>
+<li><a href="dummy_image.jpg" target="_blank">View Image of Client B</a></li><br>
+<li><a href="dummy_audio.mp3" target="_blank">Listen to Audio</a></li><br>
+<li><a href="dummy_document.pdf" target="_blank">View Documentation</a></li>
+</ul>
+</div>
+<div class="options" id="person3">
+<p>Options:</p>
+<ul>
+<li><a href="dummy_image.jpg" target="_blank">View Image of Client C</a></li><br>
+<li><a href="dummy_audio.mp3" target="_blank">Listen to Audio</a></li><br>
+<li><a href="dummy_document.pdf" target="_blank">View Documentation</a></li>
+</ul>
+</div>
+<div class="options" id="person4">
+<p>Options:</p>
+<ul>
+<li><a href="dummy_image.jpg" target="_blank">View Image of Client D</a></li><br>
+<li><a href="dummy_audio.mp3" target="_blank">Listen to Audio</a></li><br>
+<li><a href="dummy_document.pdf" target="_blank">View Documentation</a></li>
+</ul>
+</div>
+<div class="options" id="person5">
+<p>Options:</p>
+<ul>
+<li><a href="dummy_image.jpg" target="_blank">View Image of Client E</a></li><br>
+<li><a href="dummy_audio.mp3" target="_blank">Listen to Audio</a></li><br>
+<li><a href="dummy_document.pdf" target="_blank">View Documentation</a></li>
+</ul>
+</div>
+<div class="options" id="person6">
+<p>Options:</p>
+<ul>
+<li><a href="dummy_image.jpg" target="_blank">View Image of person6</a></li><br>
+<li><a href="dummy_audio.mp3" target="_blank">Listen to Audio</a></li><br>
+<li><a href="dummy_document.pdf" target="_blank">View Documentation</a></li>
+</ul>
+</div>
+<div class="options" id="person7">
+<p>Options:</p>
+<ul>
+<li><a href="dummy_image.jpg" target="_blank">View Image of person7</a></li><br>
+<li><a href="dummy_audio.mp3" target="_blank">Listen to Audio</a></li><br>
+<li><a href="dummy_document.pdf" target="_blank">View Documentation</a></li>
+</ul>
+</div>
+<div class="options" id="person8">
+<p>Options:</p>
+<ul>
+<li><a href="dummy_image.jpg" target="_blank">View Image of person8</a></li><br>
+<li><a href="dummy_audio.mp3" target="_blank">Listen to Audio</a></li><br>
+<li><a href="dummy_document.pdf" target="_blank">View Documentation</a></li>
+</ul>
+</div>
+<div class="options" id="person9">
+<p>Options:</p>
+<ul>
+<li><a href="dummy_image.jpg" target="_blank">View Image of person9</a></li><br>
+<li><a href="dummy_audio.mp3" target="_blank">Listen to Audio</a></li><br>
+<li><a href="dummy_document.pdf" target="_blank">View Documentation</a></li>
+</ul>
+</div>
+<div class="options" id="person10">
+<p>Options:</p>
+<ul>
+<li><a href="dummy_image.jpg" target="_blank">View Image of person10</a></li><br>
+<li><a href="dummy_audio.mp3" target="_blank">Listen to Audio</a></li><br>
+<li><a href="dummy_document.pdf" target="_blank">View Documentation</a></li>
+</ul>
+</div>
+<div class="options" id="person11">
+<p>Options:</p>
+<ul>
+<li><a href="dummy_image.jpg" target="_blank">View Image of person11</a></li><br>
+<li><a href="dummy_audio.mp3" target="_blank">Listen to Audio</a></li><br>
+<li><a href="dummy_document.pdf" target="_blank">View Documentation</a></li>
+</ul>
+</div>
+<div class="options" id="person12">
+<p>Options:</p>
+<ul>
+<li><a href="dummy_image.jpg" target="_blank">View Image of person12</a></li><br>
+<li><a href="dummy_audio.mp3" target="_blank">Listen to Audio</a></li><br>
+<li><a href="dummy_document.pdf" target="_blank">View Documentation</a></li>
+</ul>
+</div>
+<!-- Repeat similar structure for other persons -->
+</div>
+</div>
+<script>
+var openOptionsId = null;
+function toggleOptions(id) {
+var optionsDiv = document.getElementById(id);
+if (openOptionsId !== id) {
+if (openOptionsId !== null) {
+var previousOptionsDiv = document.getElementById(openOptionsId);
+previousOptionsDiv.style.display = "none";
+}
+optionsDiv.style.display = "block";
+openOptionsId = id;
+} else {
+optionsDiv.style.display = "none";
+openOptionsId = null;
+}
+}
+</script>
+</body>
+</html>
+
+

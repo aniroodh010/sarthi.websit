@@ -51,7 +51,7 @@ sections.forEach((section) => {
 const authButton = document.getElementById('authButton');
 
 authButton.addEventListener('click', () => {
-  window.open('https://sarthii.auth.ap-south-1.amazoncognito.com/login?client_id=4ka7je6v48ddsbl8j9b5b080fq&response_type=code&scope=email+openid+phone&redirect_uri=https%3A%2F%2Fkumarnithish12.github.io%2Fsarthi-website%2F', '_blank');
+  window.open('https://sarthii.auth.ap-south-1.amazoncognito.com/login?client_id=4ka7je6v48ddsbl8j9b5b080fq&response_type=code&scope=email+openid+phone&redirect_uri=https%3A%2F%2Fec2-3-6-90-191.ap-south-1.compute.amazonaws.com', '_blank');
 });
 
 
